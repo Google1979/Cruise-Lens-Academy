@@ -1,4 +1,10 @@
-import { Clock, Calendar, MapPin, IndianRupee, Users } from "lucide-react";
+import {
+  Clock,
+  Calendar,
+  MapPin,
+  IndianRupee,
+  WalletMinimal,
+} from "lucide-react";
 
 export const coursesData = [
   {
@@ -25,8 +31,8 @@ export const coursesData = [
         highlight: true,
       },
       {
-        icon: <Users className="w-5 h-5 text-yellow-300" />,
-        text: "Soon available via Propelld, GrayQuest, Bajaj Finserv, IDFC Bank",
+        icon: <WalletMinimal className="w-5 h-5 text-yellow-300" />,
+        text: "EMI Options Coming Soon",
       },
     ],
     features: [
@@ -51,7 +57,7 @@ export const coursesData = [
       {
         title: "Cruise Environment Exposure",
         items: [
-          "Mock drills, safety awareness",
+          // "Mock drills, safety awareness",
           "Grooming, discipline, time management onboard",
           "Case studies from real ships",
         ],
@@ -88,6 +94,10 @@ export const coursesData = [
         icon: <IndianRupee className="w-5 h-5 text-green-300" />,
         text: "1,00,000 (GST excluded)",
         highlight: true,
+      },
+      {
+        icon: <WalletMinimal className="w-5 h-5 text-yellow-300" />,
+        text: "EMI Options Coming Soon",
       },
     ],
     features: [
@@ -151,13 +161,13 @@ export const coursesData = [
           "Direct job openings via our hiring network",
         ],
       },
-      {
-        title: "Upskill Offer (if score < 80%)",
-        items: [
-          "Enroll into Course 2 at a discounted rate",
-          "Get re-evaluated later for free",
-        ],
-      },
+      // {
+      //   title: "Upskill Offer (if score < 80%)",
+      //   items: [
+      //     "Enroll into Course 2 at a discounted rate",
+      //     "Get re-evaluated later for free",
+      //   ],
+      // },
     ],
   },
 ];

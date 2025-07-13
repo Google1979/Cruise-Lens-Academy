@@ -3,7 +3,7 @@ import Hero from "./Hero";
 import OurCourses from "./courses/OurCourses";
 import WhyChooseUs from "./WhyChooseUs";
 import OurStory from "./OurStory";
-import SuccessStory from "./SuccessStory";
+// import SuccessStory from "./SuccessStory";
 import DocumentationPartner from "./DocumentationPartner";
 import RecruitmentPartner from "./RecruitementPartner";
 
@@ -16,7 +16,7 @@ export default function Home() {
         <WhyChooseUs />
         <OurCourses />
         <OurStory />
-        <SuccessStory />
+        {/* <SuccessStory /> */}
         <DocumentationPartner />
         <RecruitmentPartner />
       </div>
