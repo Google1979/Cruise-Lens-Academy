@@ -5,7 +5,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import OurStory from "./OurStory";
 // import SuccessStory from "./SuccessStory";
 import DocumentationPartner from "./DocumentationPartner";
-import RecruitmentPartner from "./RecruitementPartner";
+// import RecruitmentPartner from "./RecruitementPartner";
 
 export default function Home() {
   return (
