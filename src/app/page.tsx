@@ -18,7 +18,7 @@ export default function Home() {
         <OurStory />
         {/* <SuccessStory /> */}
         <DocumentationPartner />
-        <RecruitmentPartner />
+        {/* <RecruitmentPartner /> */}
       </div>
     </div>
   );
