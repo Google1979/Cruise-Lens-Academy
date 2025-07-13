@@ -1,4 +1,6 @@
-import { MapPin, Phone, Calendar, FileText, User } from "lucide-react";
+import { MapPin, Phone, Calendar, FileText } from "lucide-react";
+import Image from "next/image";
+import VTMALogo from "@/images/vtmalogo.png";
 
 export default function DocumentationPartner() {
   return (
@@ -15,7 +17,12 @@ export default function DocumentationPartner() {
             <div>
               <div className="flex items-center mb-6">
                 <div className="w-20 h-20 cruise-gradient rounded-3xl flex items-center justify-center mr-6">
-                  <User className="w-10 h-10 text-gray-800" />
+                  {/* <User className="w-10 h-10 text-gray-800" /> */}
+                  <Image
+                    src={VTMALogo}
+                    className="w-10 h-10"
+                    alt="Vijayatilak Maritime Academy Logo"
+                  />
                 </div>
                 <div>
                   <p className="text-white/80 text-lg">Official Partner</p>

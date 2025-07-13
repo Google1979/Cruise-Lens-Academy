@@ -1,4 +1,9 @@
-import { Ship } from "lucide-react";
+// import { Ship } from "lucide-react";
+import Image from "next/image";
+import CordeliaLogo from "@/images/recruitement/CordeliaCruises-Logo.jpg";
+import MarellaCruiseLogo from "@/images/recruitement/Marella-Cruises-Logo.jpg";
+import POCruisesLogo from "@/images/recruitement/POCruises.jpg";
+import CunardLineLogo from "@/images/recruitement/Cunard-Line-Logo.jpg";
 
 export default function RecruitmentPartner() {
   return (
@@ -25,7 +30,12 @@ export default function RecruitmentPartner() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="w-24 h-24 sunset-gradient rounded-3xl flex items-center justify-center mx-auto mb-4">
-                <Ship className="w-12 h-12 text-gray-800" />
+                {/* <Ship className="w-12 h-12 text-gray-800" /> */}
+                <Image
+                  src={CordeliaLogo}
+                  // className="w-auto h-16"
+                  alt="Cordelia Cruises Logo"
+                />
               </div>
               <h3
                 className="text-xl font-semibold text-white"
@@ -37,7 +47,12 @@ export default function RecruitmentPartner() {
 
             <div className="text-center">
               <div className="w-24 h-24 sunset-gradient rounded-3xl flex items-center justify-center mx-auto mb-4">
-                <Ship className="w-12 h-12 text-gray-800" />
+                {/* <Ship className="w-12 h-12 text-gray-800" /> */}
+                <Image
+                  src={MarellaCruiseLogo}
+                  // className="w-12 h-auto"
+                  alt="Marella Cruises Logo"
+                />
               </div>
               <h3
                 className="text-xl font-semibold text-white"
@@ -49,7 +64,12 @@ export default function RecruitmentPartner() {
 
             <div className="text-center">
               <div className="w-24 h-24 sunset-gradient rounded-3xl flex items-center justify-center mx-auto mb-4">
-                <Ship className="w-12 h-12 text-gray-800" />
+                {/* <Ship className="w-12 h-12 text-gray-800" /> */}
+                <Image
+                  src={POCruisesLogo}
+                  // className="w-12 h-12"
+                  alt="P&O Cruises Logo"
+                />
               </div>
               <h3
                 className="text-xl font-semibold text-white"
@@ -61,7 +81,12 @@ export default function RecruitmentPartner() {
 
             <div className="text-center">
               <div className="w-24 h-24 sunset-gradient rounded-3xl flex items-center justify-center mx-auto mb-4">
-                <Ship className="w-12 h-12 text-gray-800" />
+                {/* <Ship className="w-12 h-12 text-gray-800" /> */}
+                <Image
+                  src={CunardLineLogo}
+                  // className="w-12 h-12"
+                  alt="Cunard Line Logo"
+                />
               </div>
               <h3
                 className="text-xl font-semibold text-white"

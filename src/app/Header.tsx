@@ -33,10 +33,10 @@ export default function Header() {
             <Image
               src={Logo}
               alt="Cruise Lens Academy Logo"
-              className="w-28 h-auto"
+              className="w-20 h-auto"
               loading="eager"
             />
-            <span className="md:hidden text-white text-2xl font-semibold">
+            <span className="md:hidden text-white text-xl font-semibold">
               Cruise Lens Academy
             </span>
           </Link>
@@ -79,12 +79,12 @@ export default function Header() {
             >
               Recruitment
             </Link>
-            <Link
+            {/* <Link
               href="/#testimonials"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               Testimonials
-            </Link>
+            </Link> */}
           </div>
 
           {/* CTA Button */}
@@ -158,13 +158,13 @@ export default function Header() {
             >
               Recruitment
             </Link>
-            <Link
+            {/* <Link
               href="/#testimonials"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
               Testimonials
-            </Link>
+            </Link> */}
             {/* <button
               className="inline-flex items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cruise-gradient h-11 rounded-md text-black font-bold text-lg px-8 py-4 shadow-lg hover:scale-105 transform transition-all duration-200 group"
               aria-label="Apply Now"

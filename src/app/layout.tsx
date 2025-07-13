@@ -18,6 +18,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Cruise Lens Academy",
   description: "Dock here. Sail everywhere",
+  openGraph: {
+    images: [
+      {
+        url: "https://www.cruiselensacademy.com/images/snapshot.png",
+        width: 1200,
+        height: 630,
+        alt: "Cruise Lens Academy - Dock here. Sail everywhere.",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
