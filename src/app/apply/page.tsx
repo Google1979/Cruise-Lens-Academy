@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import ShipBackground from "../Background";
 
-const ApplyPage: React.FC = () => {
+export default function ApplyPage() {
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -186,6 +185,4 @@ const ApplyPage: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default ApplyPage;
+}

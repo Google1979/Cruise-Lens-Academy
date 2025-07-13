@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Logo from "@/images/logo.png";
-import { Facebook, Instagram, Linkedin, Mail, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 
 export default function Footer() {

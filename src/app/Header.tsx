@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Logo from "@/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import ApplyNowBtn from "./ApplyNowBtn";
 
 export default function Header() {
