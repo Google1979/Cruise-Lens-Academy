@@ -27,7 +27,7 @@ export default function Header() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link
-            href="#home"
+            href="/#home"
             className="flex items-center space-x-3 cursor-pointer"
           >
             <Image
