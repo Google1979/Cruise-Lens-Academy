@@ -4,6 +4,7 @@ import Logo from "@/images/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Menu } from "lucide-react";
+import ApplyNowBtn from "./ApplyNowBtn";
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -88,13 +89,14 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <button
+            {/* <button
               className="inline-flex items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cruise-gradient h-11 rounded-md text-black font-bold text-lg px-8 py-4 shadow-lg hover:scale-105 transform transition-all duration-200 group"
               aria-label="Apply Now"
             >
               Apply Now
               <ArrowRight />
-            </button>
+            </button> */}
+            <ApplyNowBtn className="rounded-md" />
           </div>
 
           {/* Mobile menu button */}
@@ -163,13 +165,14 @@ export default function Header() {
             >
               Testimonials
             </Link>
-            <button
+            {/* <button
               className="inline-flex items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cruise-gradient h-11 rounded-md text-black font-bold text-lg px-8 py-4 shadow-lg hover:scale-105 transform transition-all duration-200 group"
               aria-label="Apply Now"
             >
               Apply Now
-              <ArrowRight />
-            </button>
+              <ArrowRight /> */}
+            {/* </button> */}
+            <ApplyNowBtn className="rounded-md" />
           </div>
         }
       </nav>

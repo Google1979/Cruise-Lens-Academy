@@ -1,5 +1,7 @@
 import { ArrowRight, Camera, Ship, Globe } from "lucide-react";
 import ShipBackground from "./Background";
+import ApplyNowBtn from "./ApplyNowBtn";
+import EnquireNowBtn from "./EnquireNowBtn";
 
 export default function Hero() {
   return (
@@ -42,17 +44,12 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button
-              className="inline-flex items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cruise-gradient h-11 rounded-md text-black font-bold text-lg px-8 py-4 shadow-lg hover:scale-105 transform transition-all duration-200 group"
-              aria-label="Apply Now"
-            >
-              Apply Now
-              <ArrowRight />
-            </button>
-            <button className="inline-flex items-center justify-center ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-white/10 hover:bg-blue-400 hover:text-white h-11 rounded-md border-blue-300 text-blue-100 font-semibold text-lg px-8 py-4 backdrop-blur-sm shadow-lg hover:scale-105 transform duration-200 group">
+            <ApplyNowBtn className="inline-flex items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cruise-gradient h-11 rounded-md text-black font-bold text-lg px-8 py-4 shadow-lg hover:scale-105 transform transition-all duration-200 group" />
+
+            <EnquireNowBtn className="inline-flex items-center justify-center ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-white/10 hover:bg-blue-400 hover:text-white h-11 rounded-md border-blue-300 text-blue-100 font-semibold text-lg px-8 py-4 backdrop-blur-sm shadow-lg hover:scale-105 transform duration-200 group">
               Enquire Now
               <ArrowRight />
-            </button>
+            </EnquireNowBtn>
           </div>
         </div>
       </div>
