@@ -50,37 +50,37 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="#about"
+              href="/#about"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               About
             </Link>
             <Link
-              href="#courses"
+              href="/#courses"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               Courses
             </Link>
             <Link
-              href="#founders"
+              href="/#founders"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               Founders
             </Link>
             <Link
-              href="#partners"
+              href="/#partners"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               Partners
             </Link>
             <Link
-              href="#recruitment"
+              href="/#recruitment"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               Recruitment
             </Link>
             <Link
-              href="#testimonials"
+              href="/#testimonials"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               Testimonials
@@ -124,42 +124,42 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="#about"
+              href="/#about"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
               About
             </Link>
             <Link
-              href="#courses"
+              href="/#courses"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
               Courses
             </Link>
             <Link
-              href="#founders"
+              href="/#founders"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
               Founders
             </Link>
             <Link
-              href="#partners"
+              href="/#partners"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
               Partners
             </Link>
             <Link
-              href="#recruitment"
+              href="/#recruitment"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
               Recruitment
             </Link>
             <Link
-              href="#testimonials"
+              href="/#testimonials"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
