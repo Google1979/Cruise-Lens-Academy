@@ -73,12 +73,12 @@ export default function Header() {
             >
               Partners
             </Link>
-            <Link
+            {/* <Link
               href="/#recruitment"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
             >
               Recruitment
-            </Link>
+            </Link> */}
             {/* <Link
               href="/#testimonials"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
@@ -151,13 +151,13 @@ export default function Header() {
             >
               Partners
             </Link>
-            <Link
+            {/* <Link
               href="/#recruitment"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
               onClick={() => setMobileOpen(false)}
             >
               Recruitment
-            </Link>
+            </Link> */}
             {/* <Link
               href="/#testimonials"
               className="text-white hover:text-blue-200 transition-colors duration-300 font-medium"
