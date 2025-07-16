@@ -40,6 +40,7 @@ export async function uploadData(stepData: StepData) {
 
     // Determine table name and specific data based on course category
     let tableName: string;
+    // eslint-disable-next-line
     let specificData: any = {};
 
     switch (courseCategory) {
