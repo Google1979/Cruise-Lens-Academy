@@ -21,9 +21,8 @@ export default function Hero() {
           </p>
 
           <p className="text-lg md:text-xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed">
-            India&apos;s only career-focused cruise photography training
-            platform. Transform your creative talent into global cruise
-            professional opportunities.
+            India&apos;s only full-stack training & placement platform for
+            cruise ship photographers
           </p>
 
           {/* Feature highlights */}
