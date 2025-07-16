@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import CourseInfo from "./CourseInfo";
 import FeatureList from "./FeatureList";
+import ApplyNowBtn from "../ApplyNowBtn";
 
 interface CourseData {
   title: string;
@@ -36,6 +37,11 @@ export default function SingleCourse({ course }: SingleCourseProps) {
             {course.description}
           </p>
           <CourseInfo items={course.info} />
+
+          {/* Apply Now Button */}
+          <div className="mt-8">
+            <ApplyNowBtn className="inline-flex items-center justify-center ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 cruise-gradient h-11 rounded-md text-black font-bold text-lg px-8 py-4 shadow-lg hover:scale-105 transform transition-all duration-200 group" />
+          </div>
         </div>
 
         <div className="lg:col-span-2">
