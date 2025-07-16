@@ -40,7 +40,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <div className="min-h-screen relative bg-[#0c0a18]">
+        <div className="min-h-screen relative bg-[#0c0a18] text-white">
           <Header />
           {children}
           <Footer />
