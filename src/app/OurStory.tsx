@@ -8,7 +8,7 @@ export default function OurStory() {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            The Founders' Story
+            The Founders&apos; Story
           </h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
             Cruise Lens Academy was born out of real journeys — not just ideas.
@@ -30,15 +30,15 @@ export default function OurStory() {
           <div className="lg:col-span-3">
             <p className="text-lg text-white/90 mb-6 leading-relaxed">
               <strong>Rohan Singh</strong>, our Founder & CEO, worked as a Photo
-              Manager on some of the world's leading cruise lines, traveling to
-              43 countries and leading multicultural teams onboard. During his
-              time at sea, he encountered hundreds of talented Indian
+              Manager on some of the world&apos;s leading cruise lines,
+              traveling to 43 countries and leading multicultural teams onboard.
+              During his time at sea, he encountered hundreds of talented Indian
               photographers working in local studios, weddings, or freelance
               gigs, all with the potential to go global, but stuck due to one
-              harsh reality: they simply didn't know how.
+              harsh reality: they simply didn&apos;t know how.
             </p>
             <p className="text-lg text-white/90 mb-6 leading-relaxed">
-              Most didn't have the required maritime documents. Many lacked
+              Most didn&apos;t have the required maritime documents. Many lacked
               formal creative training or the discipline expected onboard. And
               almost none had access to the kind of mentorship or placement
               guidance that could help them break into cruise photography
@@ -64,7 +64,7 @@ export default function OurStory() {
           </p>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
             <h3 className="text-2xl font-bold text-white mb-6">
-              That's how Cruise Lens Academy came to life:
+              That&apos;s how Cruise Lens Academy came to life:
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-left">
               <div className="flex items-start">
@@ -134,10 +134,10 @@ export default function OurStory() {
             <Quote className="w-8 h-8 text-blue-300 mb-4" />
 
             <p className="text-white/90 text-lg italic mb-4">
-              "I created Cruise Lens Academy to bridge the gap between Indian
-              talent and international cruise careers. Every photographer I met
-              during my years at sea had potential — they just needed the right
-              structure and guidance to unlock it."
+              &quot;I created Cruise Lens Academy to bridge the gap between
+              Indian talent and international cruise careers. Every photographer
+              I met during my years at sea had potential — they just needed the
+              right structure and guidance to unlock it.&quot;
             </p>
             <p className="text-white font-semibold">
               - Rohan Singh, Founder & CEO
@@ -148,9 +148,9 @@ export default function OurStory() {
             <Quote className="w-8 h-8 text-pink-300 mb-4" />
 
             <p className="text-white/90 text-lg italic mb-4">
-              "We're not just training photographers — we're helping young
-              Indians transform their lives and go global with the right
-              support, skills, and confidence."
+              &quot;We&apos;re not just training photographers — we&apos;re
+              helping young Indians transform their lives and go global with the
+              right support, skills, and confidence.&quot;
             </p>
             <p className="text-white font-semibold">
               - Suraj Thakre, Co-Founder
