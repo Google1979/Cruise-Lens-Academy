@@ -22,8 +22,8 @@ export default function IsSubmittedDialog() {
             Application Submitted Successfully!
           </h3>
           <p className="text-[#c7eafd] text-lg">
-            Thank you for applying to CruiseLens Academy. We will review your
-            application and get back to you within 24-48 hours.
+            Thank you! Our team will review your application and reach out
+            shortly.
           </p>
         </div>
       </div>
