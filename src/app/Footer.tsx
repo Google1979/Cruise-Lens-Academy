@@ -18,10 +18,8 @@ export default function Footer() {
           />
 
           <p className="max-w-md mx-auto text-white/80 mb-8">
-            Dock here. Sail everywhere.
-            <br />
-            India&apos;s only full-stack training & placement platform for
-            cruise ship photographers.
+            Dock here. Sail everywhere. India&apos;s only career-focused cruise
+            photography training platform.
           </p>
 
           <div className="flex justify-center space-x-6 mb-8">
