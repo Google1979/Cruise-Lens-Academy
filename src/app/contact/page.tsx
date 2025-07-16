@@ -36,6 +36,7 @@ export default function ContactUsPage() {
       }
     } catch (err) {
       setError("An unexpected error occurred. Please try again.");
+      console.error("Error submitting contact form:", err);
     } finally {
       setIsSubmitting(false);
     }
