@@ -56,7 +56,7 @@ export default function ContactUsPage() {
                 </svg>
               </div>
               <h3 className="text-lg font-medium text-white mb-2">
-                Enquiry Submitted!
+                Enqruiry Submitted!
               </h3>
               <p className="text-[#c7eafd]">We will reach out to you soon.</p>
             </div>

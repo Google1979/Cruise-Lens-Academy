@@ -151,7 +151,6 @@ export const coursesData = [
           "Upload portfolio",
           "Practical & theoretical assessment",
           "Scoring shared within 3 days",
-          "Portfolio and test will be evaluated by our onboard faculty and training team.",
         ],
       },
       {

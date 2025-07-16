@@ -8,10 +8,12 @@ export default function OurStory() {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            The Founders' Story
+            The Story Behind
+            <span className="block">Cruise Lens Academy</span>
           </h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
-            Cruise Lens Academy was born out of real journeys — not just ideas.
+            Cruise Lens Academy was born out of lived experience — not just
+            ideas.
           </p>
         </div>
 
@@ -28,105 +30,33 @@ export default function OurStory() {
           </div>
 
           <div className="lg:col-span-3">
-            <p className="text-lg text-white/90 mb-6 leading-relaxed">
-              <strong>Rohan Singh</strong>, our Founder & CEO, worked as a Photo
-              Manager on some of the world's leading cruise lines, traveling to
-              43 countries and leading multicultural teams onboard. During his
-              time at sea, he encountered hundreds of talented Indian
-              photographers working in local studios, weddings, or freelance
-              gigs, all with the potential to go global, but stuck due to one
-              harsh reality: they simply didn't know how.
+            <p
+              className="text-lg text-white/90 mb-4 leading-relaxed"
+              data-edit-disabled="true"
+            >
+              <strong>Rohan Singh</strong>, after working aboard cruise ships
+              across 43 countries, saw first-hand how thousands of passionate
+              Indian photographers were missing out on global career
+              opportunities. Not because of talent gaps, but due to a lack of
+              documentation, structured training, and real placement guidance.
             </p>
-            <p className="text-lg text-white/90 mb-6 leading-relaxed">
-              Most didn't have the required maritime documents. Many lacked
-              formal creative training or the discipline expected onboard. And
-              almost none had access to the kind of mentorship or placement
-              guidance that could help them break into cruise photography
-              careers. Rohan knew the talent was there, but the structure was
-              missing.
+            <p
+              className="text-lg text-white/90 leading-relaxed"
+              data-edit-disabled="true"
+            >
+              Meanwhile, <strong>Suraj Thakre</strong>, with 7+ years of
+              experience managing teams and client journeys in the fitness and
+              lifestyle sector, knew how much operational structure and
+              mentorship matter in shaping careers. His strength lies in making
+              systems work — something every academy needs to scale impact.
             </p>
-            <p className="text-lg text-white/90 leading-relaxed">
-              Meanwhile, <strong>Suraj Thakre</strong>, a long-time friend and
-              now Co-Founder, was building a strong reputation in the fitness
-              and lifestyle sector, managing client journeys, mentoring teams,
-              and driving performance-based results. With over 7 years of
-              operational experience, Suraj had a deep understanding of what it
-              takes to scale systems, build trust, and create career pathways
-              for young professionals.
-            </p>
-          </div>
-        </div>
-
-        <div className="text-center text-lg text-white/90 max-w-4xl mx-auto mb-12">
-          <p className="mb-8">
-            Together, they saw an opportunity — not just to train photographers,
-            but to transform lives.
-          </p>
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h3 className="text-2xl font-bold text-white mb-6">
-              That's how Cruise Lens Academy came to life:
-            </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-left">
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                  <svg
-                    className="w-3 h-3 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <p>A platform built on practical experience, not just theory</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                  <svg
-                    className="w-3 h-3 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <p>A career-ready program tailored to Indian creatives</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                  <svg
-                    className="w-3 h-3 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  A launchpad where discipline, creativity, and documentation
-                  meet global opportunities
-                </p>
-              </div>
-            </div>
           </div>
         </div>
 
         <div className="text-center text-lg text-white/90 max-w-4xl mx-auto mb-16">
-          Today, Rohan and Suraj work hand-in-hand to guide aspiring
-          photographers — from the streets of India to the decks of
-          international cruise ships — giving them every tool they need to dock
-          locally, and sail globally.
+          Together, they started Cruise Lens Academy — a space where creative
+          passion meets professional polish, and where Indian photographers are
+          empowered to dock locally and sail globally.
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
@@ -134,27 +64,22 @@ export default function OurStory() {
             <Quote className="w-8 h-8 text-blue-300 mb-4" />
 
             <p className="text-white/90 text-lg italic mb-4">
-              "I created Cruise Lens Academy to bridge the gap between Indian
-              talent and international cruise careers. Every photographer I met
-              during my years at sea had potential — they just needed the right
-              structure and guidance to unlock it."
+              “I created Cruise Lens Academy to bridge the gap between Indian
+              talent and international cruise careers. This platform is where
+              creativity meets opportunity.”
             </p>
-            <p className="text-white font-semibold">
-              - Rohan Singh, Founder & CEO
-            </p>
+            <p className="text-white font-semibold">- Rohan Singh</p>
           </div>
 
           <div className="glass-effect rounded-3xl p-8">
             <Quote className="w-8 h-8 text-pink-300 mb-4" />
 
             <p className="text-white/90 text-lg italic mb-4">
-              "We're not just training photographers — we're helping young
+              “We’re not just training photographers — we’re helping young
               Indians transform their lives and go global with the right
-              support, skills, and confidence."
+              support, skills, and confidence.”
             </p>
-            <p className="text-white font-semibold">
-              - Suraj Thakre, Co-Founder
-            </p>
+            <p className="text-white font-semibold">- Suraj Thakre</p>
           </div>
         </div>
       </div>
