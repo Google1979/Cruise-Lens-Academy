@@ -211,7 +211,6 @@ export default function Stage3cWorkingCruise({
           {currentStep > 1 ? (
             <Button
               type="button"
-              variant="outline"
               onClick={onPrevious}
               className="flex items-center gap-2"
             >
@@ -222,7 +221,11 @@ export default function Stage3cWorkingCruise({
             <div></div>
           )}
 
-          <Button type="submit" className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            type="submit"
+            className="flex items-center gap-2"
+          >
             Next <ChevronRight className="h-4 w-4" />
           </Button>
         </div>

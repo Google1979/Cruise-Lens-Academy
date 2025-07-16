@@ -247,7 +247,6 @@ export default function Stage3bSTCWHolder({
         <div className="flex justify-between items-center pt-6">
           <Button
             type="button"
-            variant="outline"
             onClick={onPrevious}
             className="flex items-center gap-2"
           >
@@ -255,7 +254,11 @@ export default function Stage3bSTCWHolder({
             Previous
           </Button>
 
-          <Button type="submit" className="flex items-center gap-2">
+          <Button
+            variant="outline"
+            type="submit"
+            className="flex items-center gap-2"
+          >
             Next <ChevronRight className="h-4 w-4" />
           </Button>
         </div>
