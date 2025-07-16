@@ -14,16 +14,12 @@ import {
   Stage3bFormValues,
   Stage3cFormValues,
   Stage4FormValues,
+  StepData,
 } from "./applyFormStore";
 import IsSubmittingDialog from "./IsSubmittingDialog";
 import IsSubmittedDialog from "./IsSubmittedDialog";
-
-type StepData = {
-  personalDetails?: Stage1FormValues;
-  courseSelection?: Stage2FormValues;
-  specificQuestions?: Stage3aFormValues | Stage3bFormValues | Stage3cFormValues;
-  resumeUpload?: Stage4FormValues;
-};
+import { uploadData } from "./applyFormAction";
+import { toast } from "sonner";
 
 export default function ApplyPage() {
   const [currentStep, setCurrentStep] = useState(1);
@@ -31,6 +27,7 @@ export default function ApplyPage() {
   const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const totalSteps = 4;
 
@@ -51,20 +48,30 @@ export default function ApplyPage() {
   const nextStep = () => {
     if (currentStep < totalSteps) {
       setCurrentStep((prev) => prev + 1);
+      setError(null); // Clear errors when moving to next step
     }
   };
 
   const prevStep = () => {
     if (currentStep > 1) {
       setCurrentStep((prev) => prev - 1);
+      setError(null); // Clear errors when moving to previous step
     }
   };
 
   const handleFinalSubmit = async (resumeData: Stage4FormValues) => {
     setIsSubmitting(true);
+    setError(null); // Clear any previous errors
     handleStepData("resumeUpload", resumeData);
 
-    await new Promise((resolve) => setTimeout(resolve, 2000));
+    const res = await uploadData(stepData);
+    if (res.error) {
+      console.error("Error uploading data:", res.error);
+      setError(res.error);
+      toast.error("Failed to submit application. Please try again.");
+      setIsSubmitting(false);
+      return;
+    }
 
     console.log("Final Submission Data:", stepData);
 
@@ -115,6 +122,35 @@ export default function ApplyPage() {
 
       {/* Form Content */}
       <div className="bg-[#181824]/80 shadow-lg rounded-lg p-8">
+        {error && (
+          <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-md">
+            <div className="flex items-center">
+              <svg
+                className="h-5 w-5 text-red-400 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+              <p className="text-red-400 text-sm font-medium">
+                Application Submission Failed
+              </p>
+            </div>
+            <p className="text-red-300 text-sm mt-1">{error}</p>
+            <button
+              onClick={() => setError(null)}
+              className="mt-2 text-red-400 hover:text-red-300 text-sm underline"
+            >
+              Dismiss
+            </button>
+          </div>
+        )}
         {currentStep === 1 && (
           <Stage1_PersonalDetailsForm
             onNext={(data: Stage1FormValues) => {

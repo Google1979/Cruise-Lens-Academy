@@ -1,8 +1,9 @@
 "use client";
 import React, { useState } from "react";
+import { submitContactForm, ContactFormData } from "./contactAction";
 
 export default function ContactUsPage() {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<ContactFormData>({
     name: "",
     email: "",
     phone: "",
@@ -11,22 +12,33 @@ export default function ContactUsPage() {
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     setForm({ ...form, [e.target.name]: e.target.value });
+    setError(null); // Clear error when user starts typing
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
 
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    try {
+      const result = await submitContactForm(form);
 
-    setSubmitted(true);
-    setIsSubmitting(false);
+      if (result.success) {
+        setSubmitted(true);
+      } else {
+        setError(result.error || "Failed to submit contact form");
+      }
+    } catch (err) {
+      setError("An unexpected error occurred. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -38,6 +50,12 @@ export default function ContactUsPage() {
         </div>
 
         <div className="bg-[#181824]/80 shadow-lg rounded-lg p-8">
+          {error && (
+            <div className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-md">
+              <p className="text-red-400 text-sm">{error}</p>
+            </div>
+          )}
+
           {submitted ? (
             <div className="text-center py-8">
               <div className="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4">

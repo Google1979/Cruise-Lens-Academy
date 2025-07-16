@@ -112,3 +112,10 @@ export const stage4FormSchema = z.object({
 });
 
 export type Stage4FormValues = z.infer<typeof stage4FormSchema>;
+
+export type StepData = {
+  personalDetails?: Stage1FormValues;
+  courseSelection?: Stage2FormValues;
+  specificQuestions?: Stage3aFormValues | Stage3bFormValues | Stage3cFormValues;
+  resumeUpload?: Stage4FormValues;
+};

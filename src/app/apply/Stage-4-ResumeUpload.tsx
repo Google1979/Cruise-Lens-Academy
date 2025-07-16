@@ -98,7 +98,6 @@ export default function Stage4ResumeUpload({
         <div className="flex justify-between items-center pt-6">
           <Button
             type="button"
-            variant="outline"
             onClick={onPrevious}
             className="flex items-center gap-2"
           >
