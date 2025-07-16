@@ -10,8 +10,8 @@ export default function About() {
             About Cruise Lens Academy
           </h2>
           <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-4xl mx-auto">
-            India's only full-stack cruise photography training platform — where
-            your passion meets international opportunity.
+            India&apos;s only full-stack cruise photography training platform —
+            where your passion meets international opportunity.
           </p>
         </div>
 
@@ -27,11 +27,11 @@ export default function About() {
             </div>
             <p className="text-lg text-white/70 leading-relaxed">
               Thousands of talented Indian photographers dream of working
-              abroad, but most never make it past the dock. The barrier isn't
-              skill — it's the lack of proper maritime documentation, structured
-              creative training, and real placement support. The result? Missed
-              opportunities, shattered confidence, and careers that never leave
-              the shore.
+              abroad, but most never make it past the dock. The barrier
+              isn&apos;t skill — it&apos;s the lack of proper maritime
+              documentation, structured creative training, and real placement
+              support. The result? Missed opportunities, shattered confidence,
+              and careers that never leave the shore.
             </p>
           </div>
 
@@ -51,9 +51,9 @@ export default function About() {
               placement support with global cruise lines.
             </p>
             <p className="text-lg text-white/70 leading-relaxed">
-              Whether you're starting fresh, transitioning careers, or advancing
-              your current role, our structured programs are designed to make
-              you cruise-ready — professionally and personally.
+              Whether you&apos;re starting fresh, transitioning careers, or
+              advancing your current role, our structured programs are designed
+              to make you cruise-ready — professionally and personally.
             </p>
           </div>
         </div>

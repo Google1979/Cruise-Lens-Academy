@@ -21,16 +21,7 @@ import IsSubmittedDialog from "./IsSubmittedDialog";
 type StepData = {
   personalDetails?: Stage1FormValues;
   courseSelection?: Stage2FormValues;
-  specificQuestions?:
-    | (StepData["courseSelection"] extends { courseCategory: "beginner" }
-        ? Stage3aFormValues
-        : never)
-    | (StepData["courseSelection"] extends { courseCategory: "stcw" }
-        ? Stage3bFormValues
-        : never)
-    | (StepData["courseSelection"] extends { courseCategory: "photographer" }
-        ? Stage3cFormValues
-        : never);
+  specificQuestions?: Stage3aFormValues | Stage3bFormValues | Stage3cFormValues;
   resumeUpload?: Stage4FormValues;
 };
 
@@ -43,13 +34,18 @@ export default function ApplyPage() {
 
   const totalSteps = 4;
 
-  const handleStepData = (step: keyof StepData, data: any) => {
+  function handleStepData<K extends keyof StepData>(
+    step: K,
+    data: StepData[K]
+  ) {
     setStepData((prev) => ({ ...prev, [step]: data }));
-  };
+  }
 
-  const handleCategorySelection = (category: string) => {
+  const handleCategorySelection = (
+    category: Stage2FormValues["courseCategory"]
+  ) => {
     setSelectedCategory(category);
-    handleStepData("courseSelection", { category });
+    handleStepData("courseSelection", { courseCategory: category });
   };
 
   const nextStep = () => {
