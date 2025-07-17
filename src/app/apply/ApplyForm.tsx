@@ -63,8 +63,12 @@ export default function ApplyPage() {
     setIsSubmitting(true);
     setError(null); // Clear any previous errors
     handleStepData("resumeUpload", resumeData);
+    const finalStepData: StepData = {
+      ...stepData,
+      resumeUpload: resumeData,
+    };
 
-    const res = await uploadData(stepData);
+    const res = await uploadData(finalStepData);
     if (res.error) {
       console.error("Error uploading data:", res.error);
       setError(res.error);
@@ -72,8 +76,6 @@ export default function ApplyPage() {
       setIsSubmitting(false);
       return;
     }
-
-    console.log("Final Submission Data:", stepData);
 
     setSubmitted(true);
     setIsSubmitting(false);
