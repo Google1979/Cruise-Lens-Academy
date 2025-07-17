@@ -103,9 +103,30 @@ export async function uploadData(stepData: StepData) {
       ...specificData,
     };
 
-    const { data, error } = await supabase
+    // If files are present, handle file uploads to Supabase Storage
+    let fileName = null;
+    if (
+      stepData.resumeUpload?.files &&
+      stepData.resumeUpload.files.length > 0
+    ) {
+      const file = stepData.resumeUpload.files[0];
+      const extension = file.name.split('.').pop();
+      fileName = `${courseCategory}/${application_id}/resume${extension ? '.' + extension : ''}`;
+      const { error: uploadError } = await supabase.storage
+      .from("resumes-32984738957984")
+      .upload(fileName, file);
+
+      if (uploadError) {
+      console.error("Error uploading file:", uploadError);
+      throw new Error(
+        `Failed to upload file ${file.name}: ${uploadError.message}`
+      );
+      }
+    }
+
+    const { error } = await supabase
       .from(tableName)
-      .insert([applicationData]);
+      .insert([{...applicationData, resume_file_paths: fileName ? [fileName]: null}]);
 
     if (error) {
       console.error(
@@ -117,44 +138,7 @@ export async function uploadData(stepData: StepData) {
       );
     }
 
-    // If files are present, handle file uploads to Supabase Storage
-    if (
-      stepData.resumeUpload?.files &&
-      stepData.resumeUpload.files.length > 0
-    ) {
-      const fileUploadPromises = stepData.resumeUpload.files.map(
-        async (file) => {
-          const fileName = `${courseCategory}/${application_id}/${file.name}`;
-          const { error: uploadError } = await supabase.storage
-            .from("resumes-32984738957984")
-            .upload(fileName, file);
-
-          if (uploadError) {
-            console.error("Error uploading file:", uploadError);
-            throw new Error(
-              `Failed to upload file ${file.name}: ${uploadError.message}`
-            );
-          }
-
-          return fileName;
-        }
-      );
-
-      const uploadedFiles = await Promise.all(fileUploadPromises);
-
-      // Update the application record with the uploaded file paths
-      const { error: updateError } = await supabase
-        .from(tableName)
-        .update({ resume_file_paths: uploadedFiles })
-        .eq("id", application_id);
-
-      if (updateError) {
-        console.error("Error updating file paths:", updateError);
-        throw new Error(`Failed to update file paths: ${updateError.message}`);
-      }
-    }
-
-    return { success: true, data, category: courseCategory, table: tableName };
+    return { success: true };
   } catch (error) {
     console.error("Error in uploadData:", error);
     return {
