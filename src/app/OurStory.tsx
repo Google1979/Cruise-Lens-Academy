@@ -7,7 +7,7 @@ export default function OurStory() {
     <section id="founders" className="py-20 px-6 relative">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-normal text-white mb-6">
             The Founders&apos; Story
           </h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
@@ -63,7 +63,7 @@ export default function OurStory() {
             but to transform lives.
           </p>
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h3 className="text-2xl font-bold text-white mb-6">
+            <h3 className="text-2xl font-normal text-white mb-6">
               That&apos;s how Cruise Lens Academy came to life:
             </h3>
             <div className="grid md:grid-cols-3 gap-6 text-left">
@@ -139,7 +139,7 @@ export default function OurStory() {
               I met during my years at sea had potential — they just needed the
               right structure and guidance to unlock it.&quot;
             </p>
-            <p className="text-white font-semibold">
+            <p className="text-white font-normal">
               - Rohan Singh, Founder & CEO
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function OurStory() {
               helping young Indians transform their lives and go global with the
               right support, skills, and confidence.&quot;
             </p>
-            <p className="text-white font-semibold">
+            <p className="text-white font-normal">
               - Suraj Thakre, Co-Founder
             </p>
           </div>

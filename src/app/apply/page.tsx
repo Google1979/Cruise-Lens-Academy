@@ -5,7 +5,7 @@ export default function ApplyPage() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-white mb-4">
+          <h1 className="text-3xl font-normal text-white mb-4">
             Apply to CruiseLens Academy
           </h1>
           <p className="text-lg text-[#c7eafd]">

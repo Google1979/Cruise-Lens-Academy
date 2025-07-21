@@ -54,7 +54,7 @@ export default function Stage4ResumeUpload({
         className="space-y-8 max-w-3xl mx-auto py-10 text-white/80"
       >
         <div>
-          <h2 className="text-xl font-semibold mb-2 text-white">
+          <h2 className="text-xl font-normal mb-2 text-white">
             Upload Your Resume or Documents
           </h2>
           <p className="mb-4 text-[#c7eafd]">

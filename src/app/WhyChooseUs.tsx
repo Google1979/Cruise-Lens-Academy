@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
     <section className="py-20 px-6 ">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-normal text-white mb-6">
             Why Choose Cruise Lens Academy?
           </h2>
         </div>
@@ -55,7 +55,7 @@ export default function WhyChooseUs() {
                   {card.icon}
                 </span>
               </div>
-              <h3 className="text-2xl font-bold text-white mb-2 tracking-tight drop-shadow">
+              <h3 className="text-2xl font-normal text-white mb-2 tracking-tight drop-shadow">
                 {card.title}
               </h3>
               <p className="text-white/80 text-base leading-relaxed">

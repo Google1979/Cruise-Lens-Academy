@@ -6,7 +6,7 @@ export default function About() {
     <section id="about" className="py-24 px-6 relative">
       <div className="container mx-auto max-w-5xl">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-normal text-white mb-8 tracking-tight">
             About Cruise Lens Academy
           </h2>
           <p className="text-xl md:text-2xl text-white/80 leading-relaxed max-w-4xl mx-auto">
@@ -21,7 +21,7 @@ export default function About() {
               <div className="w-16 h-16 bg-red-500/20 rounded-2xl flex items-center justify-center mb-6">
                 <AlertTriangle className="w-8 h-8 text-red-400" />
               </div>
-              <h3 className="text-3xl font-bold text-white mb-6">
+              <h3 className="text-3xl font-normal text-white mb-6">
                 The Challenge
               </h3>
             </div>
@@ -40,7 +40,7 @@ export default function About() {
               <div className="w-16 h-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
                 <Ship className="w-8 h-8 text-blue-400" />
               </div>
-              <h3 className="text-3xl font-bold text-white mb-6">
+              <h3 className="text-3xl font-normal text-white mb-6">
                 Our Solution
               </h3>
             </div>

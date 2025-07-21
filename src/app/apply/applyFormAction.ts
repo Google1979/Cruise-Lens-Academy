@@ -29,6 +29,7 @@ export async function uploadData(stepData: StepData) {
         stepData.personalDetails?.preferred_way_to_connect,
       how_did_you_here_about_cruise_academy:
         stepData.personalDetails?.how_did_you_here_about_cruise_academy,
+      source_from: stepData.personalDetails?.source_from || "",
 
       // Resume Upload (file names if any)
       resume_files: stepData.resumeUpload?.files?.map((file) => file.name),

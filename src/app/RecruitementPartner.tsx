@@ -10,7 +10,7 @@ export default function RecruitmentPartner() {
     <section id="recruitment" className="py-20 px-6 relative">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-normal text-white mb-6">
             Recruitment &amp; Placement
           </h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
@@ -38,7 +38,7 @@ export default function RecruitmentPartner() {
                 />
               </div>
               <h3
-                className="text-xl font-semibold text-white"
+                className="text-xl font-normal text-white"
                 data-edit-disabled="true"
               >
                 Cordelia Cruises
@@ -55,7 +55,7 @@ export default function RecruitmentPartner() {
                 />
               </div>
               <h3
-                className="text-xl font-semibold text-white"
+                className="text-xl font-normal text-white"
                 data-edit-disabled="true"
               >
                 Marella Cruises
@@ -72,7 +72,7 @@ export default function RecruitmentPartner() {
                 />
               </div>
               <h3
-                className="text-xl font-semibold text-white"
+                className="text-xl font-normal text-white"
                 data-edit-disabled="true"
               >
                 P&amp;O Cruises
@@ -89,7 +89,7 @@ export default function RecruitmentPartner() {
                 />
               </div>
               <h3
-                className="text-xl font-semibold text-white"
+                className="text-xl font-normal text-white"
                 data-edit-disabled="true"
               >
                 Cunard Line
