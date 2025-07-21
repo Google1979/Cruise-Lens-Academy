@@ -152,9 +152,7 @@ export default function OurStory() {
               helping young Indians transform their lives and go global with the
               right support, skills, and confidence.&quot;
             </p>
-            <p className="text-white font-normal">
-              - Suraj Thakre, Co-Founder
-            </p>
+            <p className="text-white font-normal">- Suraj Thakre, Co-Founder</p>
           </div>
         </div>
       </div>
