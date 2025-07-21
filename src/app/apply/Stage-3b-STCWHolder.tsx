@@ -62,7 +62,7 @@ export default function Stage3bSTCWHolder({
         className="space-y-8 max-w-3xl mx-auto py-10 text-white/80"
       >
         <div>
-          <h2 className="text-xl font-bold mb-4 text-white">
+          <h2 className="text-xl font-normal mb-4 text-white">
             STCW Holders & Ex-Seafarers
           </h2>
           <p className="mb-6 text-[#c7eafd]">

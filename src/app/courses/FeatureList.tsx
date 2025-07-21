@@ -8,7 +8,7 @@ interface FeatureListProps {
 export default function FeatureList({ title, features }: FeatureListProps) {
   return (
     <div>
-      <h5 className="font-semibold text-white mb-3" data-edit-disabled="true">
+      <h5 className="font-normal text-white mb-3" data-edit-disabled="true">
         {title}
       </h5>
       <ul className="space-y-2">

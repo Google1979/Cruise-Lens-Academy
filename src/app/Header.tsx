@@ -22,7 +22,9 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50  ${
         scrolled && "transition-all duration-300"
-      } ${scrolled || mobileOpen ? "backdrop-blur-md bg-black/60" : ""}`}
+      } ${scrolled || mobileOpen ? "backdrop-blur-md bg-black/60" : ""}
+      ${scrolled ? "block" : "hidden"}
+      `}
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
@@ -36,7 +38,7 @@ export default function Header() {
               className="w-20 h-auto"
               loading="eager"
             />
-            <span className="md:hidden text-white text-xl font-semibold">
+            <span className="md:hidden text-white text-xl font-normal">
               Cruise Lens Academy
             </span>
           </Link>

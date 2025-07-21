@@ -15,6 +15,7 @@ export const stage1FormSchema = z.object({
     error: "Please select at least one item",
   }),
   how_did_you_here_about_cruise_academy: z.string(),
+  source_from: z.string().optional(),
 });
 
 export type Stage1FormValues = z.infer<typeof stage1FormSchema>;

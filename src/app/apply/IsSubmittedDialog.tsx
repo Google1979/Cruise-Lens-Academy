@@ -18,7 +18,7 @@ export default function IsSubmittedDialog() {
               ></path>
             </svg>
           </div>
-          <h3 className="text-2xl font-bold text-white mb-4">
+          <h3 className="text-2xl font-normal text-white mb-4">
             Application Submitted Successfully!
           </h3>
           <p className="text-[#c7eafd] text-lg">

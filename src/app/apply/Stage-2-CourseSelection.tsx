@@ -57,7 +57,7 @@ export default function Stage2CourseSelection({
         className="space-y-8 max-w-3xl mx-auto py-10 text-white/80"
       >
         <div>
-          <h2 className="text-2xl font-bold mb-2 text-white">
+          <h2 className="text-2xl font-normal mb-2 text-white">
             Select Your Path
           </h2>
         </div>

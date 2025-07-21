@@ -47,7 +47,7 @@ export default function ContactUsPage() {
       {/* <ShipBackground /> */}
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-white mb-4">Contact Us</h1>
+          <h1 className="text-3xl font-normal text-white mb-4">Contact Us</h1>
         </div>
 
         <div className="bg-[#181824]/80 shadow-lg rounded-lg p-8">

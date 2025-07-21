@@ -7,7 +7,7 @@ export default function DocumentationPartner() {
     <section id="partners" className="py-20 px-6 relative">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-normal text-white mb-6">
             Documentation Partner
           </h2>
         </div>
@@ -26,7 +26,7 @@ export default function DocumentationPartner() {
                 </div>
                 <div>
                   <p className="text-white/80 text-lg">Official Partner</p>
-                  <h3 className="text-3xl font-bold text-white">
+                  <h3 className="text-3xl font-normal text-white">
                     Vijayatilak Maritime Academy
                   </h3>
                 </div>
@@ -49,7 +49,7 @@ export default function DocumentationPartner() {
             </div>
 
             <div>
-              <h4 className="text-2xl font-semibold text-white mb-4">
+              <h4 className="text-2xl font-normal text-white mb-4">
                 Documents Handled for Our Students:
               </h4>
               <div className="grid grid-cols-2 gap-4 mb-6">

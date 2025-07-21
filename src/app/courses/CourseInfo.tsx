@@ -14,7 +14,7 @@ export default function CourseInfo({ items }: CourseInfoProps) {
           {item.icon}
           <span
             className={`text-white ${
-              item.highlight ? "font-bold text-xl" : ""
+              item.highlight ? "font-normal text-xl" : ""
             }`}
             data-edit-disabled="true"
           >
