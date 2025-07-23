@@ -5,8 +5,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: var(--font-geist-mono), Consolas, Monaco, "Courier New", monospace;
+  --font-sans: 'Geist Sans';
+  --font-mono: 'Geist Mono';
 }
 
 /* Enhanced font rendering for cross-browser consistency */
@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: 'Geist Sans', 'Geist';
   font-synthesis: none;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
