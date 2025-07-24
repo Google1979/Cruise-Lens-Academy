@@ -36,7 +36,7 @@ export default function Hero() {
           </p>
 
           {/* Feature highlights */}
-          <div className="flex justify-center items-center space-x-8 mb-12">
+          <div className="flex text-sm md:text-normal justify-center items-center space-x-8 mb-12">
             <div className="flex items-center space-x-2 text-blue-200">
               <Camera className="w-6 h-6" />
               <span className="font-medium">Photography</span>

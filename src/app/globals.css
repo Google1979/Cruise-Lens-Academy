@@ -5,8 +5,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: 'Geist Sans';
-  --font-mono: 'Geist Mono';
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 /* Enhanced font rendering for cross-browser consistency */
@@ -23,10 +23,23 @@ html {
 }
 
 body {
-  font-family: 'Geist Sans', 'Geist';
   font-synthesis: none;
   text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+/* Mobile-first approach with Poppins */
+@media (max-width: 1023px) {
+  .font-sans {
+    font-family: var(--font-poppins);
+  }
+}
+
+/* Switch to Geist Sans on desktop */
+@media (min-width: 1024px) {
+  .font-sans {
+    font-family: var(--font-geist-sans);
+  }
 }
 
 /* Fix for Android Chrome font rendering */
