@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
               <div
                 className={`w-20 h-20 ${card.gradient} rounded-2xl flex items-center justify-center mb-6 transition-transform duration-300 group-hover:scale-110 shadow-lg`}
               >
-                <span className="cruise-gradient backdrop-blur-xl rounded-xl p-4 flex items-center justify-center shadow-2xl border border-white/20 transition-transform duration-300 group-hover:scale-125 group-hover:shadow-3xl">
+                <span className="cruise-gradient backdrop-blur-xl rounded-xl p-4 flex items-center justify-center shadow-2xl border border-white/20 transition-transform duration-300 group-hover:scale-125 group-hover:shadow-3xl text-black">
                   {card.icon}
                 </span>
               </div>

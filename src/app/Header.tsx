@@ -12,7 +12,8 @@ export default function Header() {
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 10);
+      const eightyVh = window.innerHeight * 0.8;
+      setScrolled(window.scrollY > eightyVh);
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
@@ -38,7 +39,7 @@ export default function Header() {
             <Image
               src={Logo}
               alt="Cruise Lens Academy Logo"
-              className="w-20 h-auto"
+              className="w-12 h-auto"
               loading="eager"
             />
             <span className="md:hidden text-white text-xl font-normal">
@@ -101,7 +102,7 @@ export default function Header() {
               Apply Now
               <ArrowRight />
             </button> */}
-            <ApplyNowBtn className="rounded-md" />
+            <ApplyNowBtn className="rounded-md py-2" />
           </div>
 
           {/* Mobile menu button */}
