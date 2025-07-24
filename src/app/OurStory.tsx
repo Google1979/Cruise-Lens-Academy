@@ -1,4 +1,5 @@
 import PhotoRoshan from "@/images/photo-roshan.jpg";
+import PhotoSuraj from "@/images/photo-suraj.jpg";
 import { Quote } from "lucide-react";
 import Image from "next/image";
 
@@ -28,6 +29,12 @@ export default function OurStory() {
           </div>
 
           <div className="lg:col-span-3">
+            <h3 className="text-2xl text-white mb-4">
+              Rohan Singh
+              <span className="block text-lg text-blue-400 mt-1">
+                Founder & CEO
+              </span>
+            </h3>
             <p className="text-lg text-white/90 mb-6 leading-relaxed">
               <strong>Rohan Singh</strong>, our Founder & CEO, worked as a Photo
               Manager on some of the world&apos;s leading cruise lines,
@@ -57,72 +64,57 @@ export default function OurStory() {
           </div>
         </div>
 
-        <div className="text-center text-lg text-white/90 max-w-4xl mx-auto mb-12">
-          <p className="mb-8">
-            Together, they saw an opportunity — not just to train photographers,
-            but to transform lives.
-          </p>
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-            <h3 className="text-2xl font-normal text-white mb-6">
-              That&apos;s how Cruise Lens Academy came to life:
+        {/* Suraj's Bio Section */}
+        <div className="grid lg:grid-cols-5 gap-12 items-center mb-16">
+          <div className="lg:col-span-3 order-2 lg:order-1">
+            <h3 className="text-2xl text-white mb-4">
+              Suraj Thakre
+              <span className="block text-lg text-blue-400 mt-1">
+                Director of Business Development
+              </span>
             </h3>
-            <div className="grid md:grid-cols-3 gap-6 text-left">
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                  <svg
-                    className="w-3 h-3 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <p>A platform built on practical experience, not just theory</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                  <svg
-                    className="w-3 h-3 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <p>A career-ready program tailored to Indian creatives</p>
-              </div>
-              <div className="flex items-start">
-                <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
-                  <svg
-                    className="w-3 h-3 text-white"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                </div>
-                <p>
-                  A launchpad where discipline, creativity, and documentation
-                  meet global opportunities
-                </p>
-              </div>
+            <p className="text-lg text-white/90 mb-6 leading-relaxed">
+              Suraj Thakre is a passionate business development leader with a
+              solid foundation in hospitality and client management. With over 4
+              years in the hospitality sector and 7+ years guiding clients in
+              the fitness industry, he brings a deep understanding of people,
+              relationships, and personal growth to his role.
+            </p>
+            <p className="text-lg text-white/90 mb-6 leading-relaxed">
+              As Director of Business Development at CruiseLens Academy, Suraj
+              goes beyond strategy and numbers—he connects with students on a
+              personal level. His approach is not just theoretical but rooted in
+              real conversations, emotional understanding, and a student-first
+              mindset. From the first inquiry to final placement, Suraj ensures
+              that every student feels heard, guided, and inspired throughout
+              their journey.
+            </p>
+            <p className="text-lg text-white/90 leading-relaxed">
+              He oversees outreach, marketing, and end-to-end student
+              support—including STCW training and cruise ship placements—helping
+              aspiring photographers turn their passion into a global career.
+              His mission is to make CruiseLens Academy not just an institution,
+              but a launchpad for dreams, learning, and unforgettable journeys.
+            </p>
+          </div>
+
+          <div className="lg:col-span-2 order-1 lg:order-2">
+            <div className="glass-effect rounded-3xl p-4">
+              <Image
+                src={PhotoSuraj}
+                alt="Suraj Thakre, Director of Business Development"
+                className="rounded-2xl w-full"
+                placeholder="blur"
+              />
             </div>
           </div>
         </div>
 
-        <div className="text-center text-lg text-white/90 max-w-4xl mx-auto mb-16">
+        <div className="text-center text-lg text-white/90 max-w-4xl mx-auto mb-12">
+          Together, they saw an opportunity — not just to train photographers,
+          but to transform lives.
+        </div>
+        <div className="text-center text-lg text-white/90 max-w-4xl mx-auto mb-12">
           Today, Rohan and Suraj work hand-in-hand to guide aspiring
           photographers — from the streets of India to the decks of
           international cruise ships — giving them every tool they need to dock

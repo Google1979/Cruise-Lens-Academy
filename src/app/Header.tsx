@@ -20,10 +20,13 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50  ${
-        scrolled && "transition-all duration-300"
-      } ${scrolled || mobileOpen ? "backdrop-blur-md bg-black/60" : ""}
-      ${scrolled ? "block" : "hidden"}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease
+      ${
+        scrolled || mobileOpen
+          ? "opacity-100 backdrop-blur-md bg-black/60"
+          : "opacity-0"
+      }
+      ${!scrolled && !mobileOpen && "-translate-y-full"}
       `}
     >
       <nav className="container mx-auto px-6 py-4">

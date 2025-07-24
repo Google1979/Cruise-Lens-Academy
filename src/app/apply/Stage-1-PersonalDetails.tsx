@@ -219,25 +219,28 @@ export default function Stage1_PersonalDetailsForm({ onNext }: Stage1Props) {
         />
 
         {/* Conditional "From" field that appears when any radio option is selected */}
-        {form.watch("how_did_you_here_about_cruise_academy") && (
-          <FormField
-            control={form.control}
-            name="source_from"
-            render={({ field }) => (
-              <FormItem>
-                <FormLabel>From</FormLabel>
-                <FormControl>
-                  <Input
-                    placeholder="Please specify..."
-                    type="text"
-                    {...field}
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        )}
+        {form.watch("how_did_you_here_about_cruise_academy") &&
+          ["other", "referral"].includes(
+            form.watch("how_did_you_here_about_cruise_academy")
+          ) && (
+            <FormField
+              control={form.control}
+              name="source_from"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>From</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Please specify..."
+                      type="text"
+                      {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+          )}
 
         <div className="flex justify-end items-center pt-6">
           <Button
